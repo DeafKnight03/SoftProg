@@ -1,7 +1,83 @@
-.new-event-page { max-width: 500px; margin: 2rem auto; padding: 1rem; }
-.new-event-page h2 { text-align: center; margin-bottom: 1rem; }
-.new-event-page form label { display: block; margin-bottom: 1rem; }
-.new-event-page form input,
-.new-event-page form select,
-.new-event-page form textarea { width: 100%; padding: 0.5rem; margin-top: 0.25rem; }
-.new-event-page form button { margin-top: 1rem; padding: 0.75rem; width: 100%; cursor: pointer; }
+/* wrapper centrale */
+.new-event-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;    /* prima era center */
+  padding: 1rem;
+  padding-top: 4rem;          /* spazio tra navbar e card */
+  background: url('/background-blur.jpg') center/cover no-repeat;
+}
+
+/* la “card” resta come prima, senza alti margini che la centrino */
+.form-card {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 100%;
+  /* rimuovi eventuali margin-top aggiuntivi */
+  margin-top: 0;
+}
+
+/* Titolo */
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Griglia due colonne */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem 1.5rem;
+}
+
+/* Gruppo campo */
+.field-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.field-group label {
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background: rgba(255,255,255,0.9);
+}
+
+/* Descrizione e Luogo occupano entrambe le colonne */
+.full-width {
+  grid-column: span 2;
+}
+
+/* Bottone di submit */
+.submit-btn {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.7rem;
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+

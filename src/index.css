@@ -36,9 +36,11 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;       /* almeno l'altezza della finestra */
+
 }
 
 /* L'area content si espande per spingere il footer in basso */
 .content {
   flex: 1;
 }
+

@@ -1,40 +1,49 @@
-.map-page {
-  background-color: var(--light-bg);
-  border: 3px solid black;
-  border-radius: 16px;
+/* src/pages/MapPage.css */
 
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-
-  width: 60vw;
+/* Wrapper per dimensioni e centering */
+.map-wrapper {
+  width: 70vw;
   height: 60vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
+  margin: 2rem auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
-.custom-icon div {
-  color: var(--red-primary);
+
+/* Mappa occupa tutto lo spazio del wrapper */
+.map-wrapper .leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
 }
-.navigate-button {
-  background: #007bff;
-  border: none;
-  padding: 8px 12px;
+
+/* Icone emoji personalizzate */
+.custom-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* Pulsante Segnala rimozione */
+.leaflet-popup-content .remove-report-btn {
+  display: block;
+  margin: 0.75rem 0 0;
+  padding: 0.4rem 0.8rem;
+  background-color: #dc3545;
   color: white;
+  border: none;
   border-radius: 4px;
+  font-size: 0.85rem;
   cursor: pointer;
 }
-.navigate-button:hover {
-  background: #0056b3;
+
+.leaflet-popup-content .remove-report-btn:hover {
+  background-color: #c82333;
 }
-.custom-icon {
-  /* Imposta l’altezza virtuale dell’area e la dimensione del carattere */
-  width: 50px;
-  height: 30px;
-  font-size: 90px;     /* qui ingrandisci l’emoji */
-  text-align: center;  /* centra l’emoji nel div */
-  line-height: 40px;   /* allinea verticalmente */
-}
-.navigate-button {
+
+/* Pulsante Nuovo evento */
+.leaflet-popup-content .navigate-button {
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
   background: #007bff;
@@ -43,23 +52,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.navigate-button:hover {
+
+.leaflet-popup-content .navigate-button:hover {
   background: #0056b3;
-}
-
-/* Pulsante “Segnala rimozione” nel popup */
-.remove-report-btn {
-  display: block;
-  margin: 0.75rem auto 0 0; /* spazio sopra e allineamento a sinistra */
-  padding: 0.4rem 0.8rem;
-  background-color: #dc3545;    /* rosso “pericolo” */
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-
-.remove-report-btn:hover {
-  background-color: #c82333;
 }
