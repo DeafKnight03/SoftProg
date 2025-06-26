@@ -2,9 +2,9 @@
 
 /* Wrapper per dimensioni e centering */
 .map-wrapper {
-  width: 70vw;
+  width:50vw;
   height: 60vh;
-  margin: 2rem auto;
+  margin-top: 4rem  ;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
   overflow: hidden;
@@ -55,4 +55,47 @@
 
 .leaflet-popup-content .navigate-button:hover {
   background: #0056b3;
+}
+
+/* layout: mappa a sinistra, legenda a destra */
+.map-content-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+/* legenda */
+.legend {
+  width: 500px;
+  margin: 4rem;
+  background: rgba(255,255,255,0.9);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.legend h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+.legend ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+.legend li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+.legend-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
 }

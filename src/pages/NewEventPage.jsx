@@ -1,3 +1,4 @@
+// src/pages/NewEventPage.jsx
 import React, { useState, useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import './NewEventPage.css'
@@ -16,6 +17,7 @@ export default function NewEventPage() {
     ora: '',
   })
 
+  // Al montaggio pre‐popolo id, luogo, data e ora correnti
   useEffect(() => {
     const now = new Date()
     const pad = n => String(n).padStart(2, '0')
@@ -35,8 +37,10 @@ export default function NewEventPage() {
 
   const handleSubmit = e => {
     e.preventDefault()
-    console.log('Evento salvato:', form, coords)
-    navigate('/detail', { state: { event: form, coords } })
+    // Mostra il messaggio di conferma
+    alert('Segnalazione effettuata con successo')
+    // Torna alla mappa
+    navigate('/map')
   }
 
   return (
@@ -88,6 +92,7 @@ export default function NewEventPage() {
               <label>Data</label>
               <input type="date" name="data" value={form.data} readOnly />
             </div>
+
             <div className="field-group">
               <label>Ora</label>
               <input type="time" name="ora" value={form.ora} readOnly />
@@ -100,5 +105,5 @@ export default function NewEventPage() {
         </form>
       </div>
     </div>
-  )
+)
 }
