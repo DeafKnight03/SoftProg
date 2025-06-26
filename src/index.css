@@ -1,0 +1,27 @@
+:root {
+  /* raggio di curvatura standard */
+  --border-radius: 0.5rem;      /* ~8px */
+
+  /* ombra standard con alpha 0.3 (3f float) */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --red-primary: hsl(0, 67%, 59%);    /* Rosso tenue */
+  --blue-sky:    #ffffff;    /* Blu più morbido */
+  --dark-bg:     #23233a;    /* Grigio-blu scuro */
+  --light-bg:    #e9e9f0;    /* Grigio chiaro */
+  --text-light:  #f5f5f5;    /* Bianco sporco */
+}
+
+body {
+  background-color: var(--blue-sky);
+
+  background: url("data/Progetto senza titolo.png") no-repeat center/cover;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.app-container { display:flex; flex-direction:column; min-height:100vh; }
+.main-content { flex:1; padding:1rem; }
+
+

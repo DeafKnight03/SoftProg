@@ -1,0 +1,25 @@
+.home {
+  color: var(--dark-bg);
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--light-bg);
+
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+.home ul {
+  list-style: disc;
+  margin-top: 1rem;
+}
+
+.home ul li {
+  color: var(--dark-bg);
+}
+
+.home { text-align:center; padding:2rem; }
+/* merged into the main .home block above */
+.home ul { list-style:disc; margin-top:1rem; }

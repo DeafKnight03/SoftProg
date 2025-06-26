@@ -1,0 +1,30 @@
+.navbar {
+  background: var(--red-primary, #333);
+  color: var(--text-light, #fff);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem; /* Distanza dal top */
+  width: 97vw;   /* Larghezza massima */
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--text-light, #fff);
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--blue-sky);
+}

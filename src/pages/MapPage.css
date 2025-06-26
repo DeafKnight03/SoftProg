@@ -1,0 +1,36 @@
+.map-page {
+  background-color: var(--light-bg);
+  border: 3px solid black;
+  border-radius: 16px;
+
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+
+  width: 60vw;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+.custom-icon div {
+  color: var(--red-primary);
+}
+.navigate-button {
+  background: #007bff;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.navigate-button:hover {
+  background: #0056b3;
+}
+.custom-icon {
+  /* Imposta l’altezza virtuale dell’area e la dimensione del carattere */
+  width: 20px;
+  height: 20px;
+  font-size: 22px;     /* qui ingrandisci l’emoji */
+  text-align: center;  /* centra l’emoji nel div */
+  line-height: 40px;   /* allinea verticalmente */
+}
