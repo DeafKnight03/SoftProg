@@ -25,3 +25,20 @@ a {
 .main-content { flex:1; padding:1rem; }
 
 
+/* Assicuriamoci che root occupi tutta la viewport */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Il wrapper flessibile su cui si basa tutto */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;       /* almeno l'altezza della finestra */
+}
+
+/* L'area content si espande per spingere il footer in basso */
+.content {
+  flex: 1;
+}

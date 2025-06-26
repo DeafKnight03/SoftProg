@@ -28,9 +28,38 @@
 }
 .custom-icon {
   /* Imposta l’altezza virtuale dell’area e la dimensione del carattere */
-  width: 20px;
-  height: 20px;
-  font-size: 22px;     /* qui ingrandisci l’emoji */
+  width: 50px;
+  height: 30px;
+  font-size: 90px;     /* qui ingrandisci l’emoji */
   text-align: center;  /* centra l’emoji nel div */
   line-height: 40px;   /* allinea verticalmente */
+}
+.navigate-button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.navigate-button:hover {
+  background: #0056b3;
+}
+
+/* Pulsante “Segnala rimozione” nel popup */
+.remove-report-btn {
+  display: block;
+  margin: 0.75rem auto 0 0; /* spazio sopra e allineamento a sinistra */
+  padding: 0.4rem 0.8rem;
+  background-color: #dc3545;    /* rosso “pericolo” */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.remove-report-btn:hover {
+  background-color: #c82333;
 }

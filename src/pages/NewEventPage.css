@@ -1,0 +1,7 @@
+.new-event-page { max-width: 500px; margin: 2rem auto; padding: 1rem; }
+.new-event-page h2 { text-align: center; margin-bottom: 1rem; }
+.new-event-page form label { display: block; margin-bottom: 1rem; }
+.new-event-page form input,
+.new-event-page form select,
+.new-event-page form textarea { width: 100%; padding: 0.5rem; margin-top: 0.25rem; }
+.new-event-page form button { margin-top: 1rem; padding: 0.75rem; width: 100%; cursor: pointer; }
