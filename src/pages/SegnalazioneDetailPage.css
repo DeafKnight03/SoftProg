@@ -1,0 +1,143 @@
+/* src/pages/SegnalazioneDetailPage.css */
+
+/* Card principale con tema semi-traslucido */
+.detail-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Bordo colorato a sinistra in base al tipo */
+.detail-card.rimozione {
+  border-left-color: #8b0000;
+}
+.detail-card.aggiunta {
+  border-left-color: #006400;
+}
+
+/* Titolo */
+.detail-card h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Sezione info segnalazione */
+.segnalazione-info,
+.evento-info,
+.aggiunta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.segnalazione-info div,
+.evento-info div,
+.aggiunta-info div {
+  font-size: 0.95rem;
+}
+
+/* Sotto-blocco evento-info e aggiunta-info */
+.evento-info,
+.aggiunta-info {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  border-radius: 6px;
+}
+:root {
+  --carousel-item-width: 300px;  /* imposta qui la larghezza che ti serve */
+}
+
+/* wrapper frecce + carosello */
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  overflow: hidden;   /* evita spillover */
+}
+
+/* contenitore immagini: largo quanto un elemento */
+.carousel-container {
+  display: flex;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  width: var(--carousel-item-width);    /* adatta qui */
+}
+
+/* ogni immagine occupa esattamente lo spazio disponibile */
+.carousel-image {
+  flex: 0 0 var(--carousel-item-width);
+  width: var(--carousel-item-width);
+  height: auto;
+  scroll-snap-align: center;
+  border-radius: 8px;
+}
+
+/* nascondi scrollbar */
+.carousel-container::-webkit-scrollbar { display: none; }
+.carousel-container { scrollbar-width: none; }
+
+/* frecce */
+.carousel-btn {
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+/* Contenitore per il pulsante di azione */
+.action-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Stile base pulsante */
+.action-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Rimozione: rosso scuro */
+.remove-btn {
+  background: #8b0000;
+}
+.remove-btn:hover {
+  background: #a00000;
+}
+
+/* Aggiunta: verde scuro */
+.add-btn {
+  background: #006400;
+}
+.add-btn:hover {
+  background: #008000;
+}
+.reject-btn {
+  background: #8b0000;
+}
+.reject-btn:hover {
+  background: #a00000;
+}

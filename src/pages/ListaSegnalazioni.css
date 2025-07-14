@@ -1,0 +1,60 @@
+/* Contenitore principale come card */
+.lista-segnalazioni-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.lista-segnalazioni-page h2 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Lista senza bullet, piena larghezza */
+.segnalazioni-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ogni item ha già un margine */
+.segnalazione-item {
+  margin-bottom: 0.75rem;
+}
+
+/* Link che riempie l’item, con padding */
+.segnalazione-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+}
+
+/* Rimozione: sfondo rosso scuro */
+.segnalazione-item.rimozione .segnalazione-link {
+  background: #8b0000;
+}
+.segnalazione-item.rimozione .segnalazione-link:hover {
+  background: #a00000;
+}
+
+/* Aggiunta: sfondo verde scuro */
+.segnalazione-item.aggiunta .segnalazione-link {
+  background: #006400;
+}
+.segnalazione-item.aggiunta .segnalazione-link:hover {
+  background: #008000;
+}
+
+/* Leggero movimento al hover */
+.segnalazione-link:hover {
+  transform: translateX(4px);
+}

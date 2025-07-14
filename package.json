@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "geocode": "node scripts/geocode.js"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "geocode": "node scripts/geocode.js"
+},
   "dependencies": {
     "leaflet": "^1.9.4",
     "react": "^18.2.0",

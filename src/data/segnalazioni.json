@@ -1,0 +1,32 @@
+[
+  {
+    "tipoSegnalazione": "rimozione",
+    "idSignal": 1,
+    "idEvento": 123
+  },
+  {
+    "tipoSegnalazione": "rimozione",
+    "idSignal": 2,
+    "idEvento": 456
+  },
+  {
+    "tipoSegnalazione": "aggiunta",
+    "idSignal": 3,
+    "type": "incidente",
+    "gravita": "alta",
+    "descrizione": "Scontro frontale tra due veicoli",
+    "data": "2025-06-25",
+    "ora": "08:15",
+    "indirizzo": "Via Rizzoli 1"
+  },
+  {
+    "tipoSegnalazione": "aggiunta",
+    "idSignal": 4,
+    "type": "traffico",
+    "gravita": "media",
+    "descrizione": "Coda in tangenziale",
+    "data": "2025-06-26",
+    "ora": "09:30",
+    "indirizzo": "Viale Indipendenza 45"
+  }
+]
