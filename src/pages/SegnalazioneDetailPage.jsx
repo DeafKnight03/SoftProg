@@ -1,4 +1,3 @@
-// src/pages/SegnalazioneDetailPage.jsx
 import React, { useRef } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import segnalazioni from '../data/segnalazioni.json'
@@ -26,14 +25,61 @@ export default function SegnalazioneDetailPage() {
 
   const { tipoSegnalazione, idEvento } = seg
 
-  // Azioni di conferma e rifiuto
-  const handleAccept = () => {
-    alert('Evento aggiunto con successo')
-    navigate('/admin')
+  // ✅ ACCETTA SEGNALAZIONE AGGIUNTA
+  const handleAccept = async () => {
+    try {
+      const res = await fetch(`http://localhost:3001/api/approva/${seg.idSignal}`, {
+        method: 'POST'
+      })
+      const data = await res.json()
+      if (data.success) {
+        alert('✅ Evento aggiunto con successo')
+        navigate('/admin')
+      } else {
+        alert('❌ Errore: ' + (data.error || 'impossibile aggiungere'))
+      }
+    } catch (err) {
+      alert('❌ Errore di rete: ' + err.message)
+    }
   }
-  const handleReject = () => {
-    alert('Segnalazione rifiutata')
-    navigate('/admin')
+
+  // ❌ RIFIUTA
+  const handleReject = async () => {
+  try {
+    const res = await fetch(`http://localhost:3001/api/segnalazioni/${seg.idSignal}`, {
+      method: 'DELETE'
+    })
+    const data = await res.json()
+    if (data.success) {
+      alert('❌ Segnalazione rifiutata e rimossa')
+      window.location.href = '/admin'  // forza aggiornamento
+    } else {
+      alert('⚠️ Errore nella rimozione: ' + (data.error || 'ignoto'))
+    }
+  } catch (err) {
+    alert('❌ Errore di rete: ' + err.message)
+  }
+}
+
+
+  // ✅ RIMUOVI EVENTO
+  const handleRemoveEvent = async () => {
+    if (!idEvento) return alert("ID evento mancante")
+
+    try {
+      const res = await fetch(`http://localhost:3001/api/eventi/${idEvento}`, {
+        method: 'DELETE'
+      })
+      const data = await res.json()
+      if (data.success) {
+        alert("✅ Evento rimosso con successo")
+        navigate('/admin')
+      } else {
+        alert("❌ Errore: " + (data.error || "impossibile rimuovere"))
+      }
+    } catch (err) {
+      alert("❌ Errore di rete: " + err.message)
+    }
   }
 
   return (
@@ -77,7 +123,6 @@ export default function SegnalazioneDetailPage() {
               </div>
             ))}
 
-          {/* Carosello posizionato in fondo alla card, centrato */}
           <div className="carousel-wrapper center">
             <button className="carousel-btn prev" onClick={() => scrollCarousel(-1)}>&lt;</button>
             <div className="carousel-container" ref={carouselRef}>
@@ -94,24 +139,15 @@ export default function SegnalazioneDetailPage() {
       <div className="action-container">
         {tipoSegnalazione === 'aggiunta' ? (
           <>
-            <button
-              className="action-btn add-btn"
-              onClick={handleAccept}
-            >
+            <button className="action-btn add-btn" onClick={handleAccept}>
               Aggiungi Evento
             </button>
-            <button
-              className="action-btn reject-btn"
-              onClick={handleReject}
-            >
+            <button className="action-btn reject-btn" onClick={handleReject}>
               Rifiuta
             </button>
           </>
         ) : (
-          <button
-            className="action-btn remove-btn"
-            onClick={() => { alert('Evento rimosso con successo'); navigate('/admin') }}
-          >
+          <button className="action-btn remove-btn" onClick={handleRemoveEvent}>
             Rimuovi Evento
           </button>
         )}

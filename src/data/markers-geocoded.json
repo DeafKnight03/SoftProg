@@ -1,31 +1,5 @@
 [
   {
-    "id": 123,
-    "type": "incidente",
-    "gravita": "alta",
-    "descrizione": "Scontro frontale tra due veicoli",
-    "data": "2025-06-25",
-    "ora": "08:15",
-    "indirizzo": "Via Rizzoli 1",
-    "coord": {
-      "lat": 44.5258244,
-      "lng": 11.4954063
-    }
-  },
-  {
-    "id": 2,
-    "type": "traffico",
-    "gravita": "media",
-    "descrizione": "Traffico intenso in centro",
-    "data": "2025-06-25",
-    "ora": "09:00",
-    "indirizzo": "Via Indipendenza 15",
-    "coord": {
-      "lat": 44.496669,
-      "lng": 11.3432443
-    }
-  },
-  {
     "id": 3,
     "type": "alluvione",
     "gravita": "alta",
@@ -39,19 +13,6 @@
     }
   },
   {
-    "id": 456,
-    "type": "generico",
-    "gravita": "bassa",
-    "descrizione": "Segnalazione presenza ostacolo",
-    "data": "2025-06-25",
-    "ora": "11:00",
-    "indirizzo": "Via Murri 33",
-    "coord": {
-      "lat": 44.4817808,
-      "lng": 11.3589838
-    }
-  },
-  {
     "id": 5,
     "type": "incidente",
     "gravita": "media",
@@ -60,8 +21,8 @@
     "ora": "12:15",
     "indirizzo": "Via Marconi 8",
     "coord": {
-      "lat": 44.4965742,
-      "lng": 11.3368585
+      "lat": 44.4965624,
+      "lng": 11.336735
     }
   },
   {
@@ -177,8 +138,8 @@
     "ora": "19:30",
     "indirizzo": "Via Castiglione",
     "coord": {
-      "lat": 44.4782144,
-      "lng": 11.3460751
+      "lat": 44.4782873,
+      "lng": 11.3462208
     }
   },
   {
@@ -190,8 +151,8 @@
     "ora": "20:00",
     "indirizzo": "Via delle Lame 12",
     "coord": {
-      "lat": 44.4995321,
-      "lng": 11.3349795
+      "lat": 44.5013466,
+      "lng": 11.3338829
     }
   },
   {
@@ -242,8 +203,8 @@
     "ora": "22:30",
     "indirizzo": "Via Saffi 5",
     "coord": {
-      "lat": 44.4822257,
-      "lng": 11.2805386
+      "lat": 44.5025844,
+      "lng": 11.3131331
     }
   },
   {
@@ -255,8 +216,8 @@
     "ora": "23:00",
     "indirizzo": "Via Zanolini 3",
     "coord": {
-      "lat": 44.4944785,
-      "lng": 11.3576351
+      "lat": 44.4945681,
+      "lng": 11.3577055
     }
   },
   {
@@ -281,8 +242,8 @@
     "ora": "01:00",
     "indirizzo": "Via Marconi 30",
     "coord": {
-      "lat": 44.4994917,
-      "lng": 11.3385321
+      "lat": 44.4994122,
+      "lng": 11.3385664
     }
   },
   {
@@ -294,21 +255,8 @@
     "ora": "02:30",
     "indirizzo": "Via Andrea Costa 40",
     "coord": {
-      "lat": 44.4951164,
-      "lng": 11.3241677
-    }
-  },
-  {
-    "id": 24,
-    "type": "generico",
-    "gravita": "media",
-    "descrizione": "Segnalazione guasto semaforo",
-    "data": "2025-06-26",
-    "ora": "03:15",
-    "indirizzo": "Piazza VIII Agosto",
-    "coord": {
-      "lat": 44.5,
-      "lng": 11.345
+      "lat": 44.4951029,
+      "lng": 11.3242143
     }
   },
   {
@@ -333,8 +281,8 @@
     "ora": "05:00",
     "indirizzo": "Via Stalingrado 80",
     "coord": {
-      "lat": 44.5173252,
-      "lng": 11.360115
+      "lat": 44.5240171,
+      "lng": 11.3647497
     }
   },
   {
@@ -364,29 +312,68 @@
     }
   },
   {
-    "id": 29,
-    "type": "incidente",
-    "gravita": "media",
-    "descrizione": "Scontro auto-scooter",
-    "data": "2025-06-26",
-    "ora": "08:45",
-    "indirizzo": "Via Irnerio 22",
+    "id": 31,
+    "type": "alluvione",
+    "gravita": "alta",
+    "descrizione": "Allagamento zona urbana",
+    "data": "2025-06-25",
+    "ora": "10:30",
+    "indirizzo": "Viale Berti Pichat 30",
     "coord": {
-      "lat": 44.4997091,
-      "lng": 11.3507381
+      "lat": 44.4990732,
+      "lng": 11.3567831
     }
   },
   {
-    "id": 30,
-    "type": "traffico",
+    "id": 32,
+    "type": "alluvione",
     "gravita": "bassa",
-    "descrizione": "Flusso regolare di veicoli",
-    "data": "2025-06-26",
-    "ora": "09:30",
-    "indirizzo": "Viale Giovanni XXIII 5",
+    "descrizione": "das",
+    "data": "2025-07-14",
+    "ora": "15:01",
+    "indirizzo": "Piazza Giuseppe Verdi 1, Bologna",
     "coord": {
-      "lat": 44.2149931,
-      "lng": 11.5031613
+      "lat": 44.4963149,
+      "lng": 11.350704
+    }
+  },
+  {
+    "id": 33,
+    "type": "alluvione",
+    "gravita": "alta",
+    "descrizione": "ACQUEDOTTO SOTTERRANEO ROTTO FUORIUSCITA ACQUA A PRESSIONE ELEVATA",
+    "data": "2025-07-14",
+    "ora": "15:08",
+    "indirizzo": "Via Volturno 2, Bologna",
+    "coord": {
+      "lat": 44.4975844,
+      "lng": 11.3430034
+    }
+  },
+  {
+    "id": 34,
+    "type": "incidente",
+    "gravita": "alta",
+    "descrizione": "INCIDENTE MORTALE COINVOLTI DENTI E CHESANI",
+    "data": "2025-07-14",
+    "ora": "15:12",
+    "indirizzo": "Via Irnerio 5a, Bologna",
+    "coord": {
+      "lat": 44.5006111,
+      "lng": 11.3462565
+    }
+  },
+  {
+    "id": 35,
+    "type": "alluvione",
+    "gravita": "bassa",
+    "descrizione": "ROTTURA ACQUEDOTTO SOTTERRANEO FUORI-USCITA ACQUA DALLA STRADA",
+    "data": "2025-07-14",
+    "ora": "15:13",
+    "indirizzo": "Via San Felice 10, Bologna",
+    "coord": {
+      "lat": 44.496112,
+      "lng": 11.3359254
     }
   }
 ]

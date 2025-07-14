@@ -95,12 +95,30 @@ export default function MapPage() {
                 <button
                   className="remove-report-btn"
                   onClick={() => {
-                    alert('Segnalazione effettuata con successo')
+                    const nuovaSegnalazione = {
+                      tipoSegnalazione: 'rimozione',
+                      idSignal: Date.now(), // oppure genera un ID univoco stringa
+                      idEvento: m.id
+                    }
+
+                    fetch('http://localhost:3001/api/segnalazioni', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify(nuovaSegnalazione)
+                    })
+                    .then(res => res.json())
+                    .then(data => {
+                      if (data.success) alert('✅ Segnalazione di rimozione inviata');
+                      else alert('❌ Errore nel salvataggio');
+                    })
+                    .catch(err => alert('❌ Errore di rete: ' + err.message));
+
                     navigate('/map')
                   }}
                 >
                   Segnala rimozione
                 </button>
+
               </Popup>
             </Marker>
           ))}

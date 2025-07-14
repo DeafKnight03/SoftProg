@@ -1,4 +1,3 @@
-// src/pages/NewEventPage.jsx
 import React, { useState, useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import './NewEventPage.css'
@@ -7,26 +6,26 @@ export default function NewEventPage() {
   const { state } = useLocation()
   const navigate = useNavigate()
   const { coords, address } = state || {}
+
   const [form, setForm] = useState({
-    idEvento: '',
-    tipoEvento: 'incidente',
+    idSignal: 0,
+    type: 'incidente',
     gravita: 'bassa',
     descrizione: '',
-    luogo: '',
+    indirizzo: '',
     data: '',
     ora: '',
   })
 
-  // Al montaggio pre‐popolo id, luogo, data e ora correnti
   useEffect(() => {
     const now = new Date()
     const pad = n => String(n).padStart(2, '0')
     setForm(f => ({
       ...f,
-      idEvento: Date.now().toString(),
-      luogo: `${address.road} ${address.house_number}, ${address.city}`,
+      idSignal: Date.now(),
+      indirizzo: `${address.road} ${address.house_number}, ${address.city}`,
       data: `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}`,
-      ora: `${pad(now.getHours())}:${pad(now.getMinutes())}`,
+      ora: `${pad(now.getHours())}:${pad(now.getMinutes())}`
     }))
   }, [address])
 
@@ -35,12 +34,37 @@ export default function NewEventPage() {
     setForm(f => ({ ...f, [name]: value }))
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
-    // Mostra il messaggio di conferma
-    alert('Segnalazione effettuata con successo')
-    // Torna alla mappa
-    navigate('/map')
+
+    const nuovaSegnalazione = {
+      tipoSegnalazione: 'aggiunta',
+      idSignal: form.idSignal,
+      type: form.type,
+      gravita: form.gravita,
+      descrizione: form.descrizione,
+      indirizzo: form.indirizzo,
+      data: form.data,
+      ora: form.ora
+    }
+
+    try {
+      const res = await fetch('http://localhost:3001/api/segnalazioni', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(nuovaSegnalazione)
+      })
+
+      const data = await res.json()
+      if (data.success) {
+        alert('✅ Segnalazione inviata con successo')
+        navigate('/map')
+      } else {
+        alert('❌ Errore nel salvataggio')
+      }
+    } catch (err) {
+      alert('❌ Errore di rete: ' + err.message)
+    }
   }
 
   return (
@@ -51,12 +75,12 @@ export default function NewEventPage() {
           <div className="form-grid">
             <div className="field-group">
               <label>ID Evento</label>
-              <input name="idEvento" value={form.idEvento} readOnly />
+              <input name="idSignal" value={form.idSignal} readOnly />
             </div>
 
             <div className="field-group">
               <label>Tipo Evento</label>
-              <select name="tipoEvento" value={form.tipoEvento} onChange={handleChange}>
+              <select name="type" value={form.type} onChange={handleChange}>
                 <option value="incidente">Incidente</option>
                 <option value="traffico">Traffico</option>
                 <option value="alluvione">Alluvione</option>
@@ -85,7 +109,7 @@ export default function NewEventPage() {
 
             <div className="field-group full-width">
               <label>Luogo</label>
-              <input name="luogo" value={form.luogo} readOnly />
+              <input name="indirizzo" value={form.indirizzo} readOnly />
             </div>
 
             <div className="field-group">
@@ -100,10 +124,10 @@ export default function NewEventPage() {
           </div>
 
           <button type="submit" className="submit-btn">
-            Salva Evento
+            Invia Segnalazione
           </button>
         </form>
       </div>
     </div>
-)
+  )
 }

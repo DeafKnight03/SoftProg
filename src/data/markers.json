@@ -1,25 +1,5 @@
 [
   {
-    "id": 1,
-    "type": "incidente",
-    "gravita": "alta",
-    "descrizione": "Scontro frontale tra due veicoli",
-    "data": "2025-06-25",
-    "ora": "08:15",
-    "indirizzo": "Via Rizzoli 1",
-    "coord": { "lat": 44.4949, "lng": 11.3426 }
-  },
-  {
-    "id": 2,
-    "type": "traffico",
-    "gravita": "media",
-    "descrizione": "Traffico intenso in centro",
-    "data": "2025-06-25",
-    "ora": "09:00",
-    "indirizzo": "Via Indipendenza 15",
-    "coord": { "lat": 44.4981, "lng": 11.3411 }
-  },
-  {
     "id": 3,
     "type": "alluvione",
     "gravita": "alta",
@@ -27,17 +7,10 @@
     "data": "2025-06-25",
     "ora": "10:30",
     "indirizzo": "Viale Berti Pichat 20",
-    "coord": { "lat": 44.5023, "lng": 11.3521 }
-  },
-  {
-    "id": 4,
-    "type": "generico",
-    "gravita": "bassa",
-    "descrizione": "Segnalazione presenza ostacolo",
-    "data": "2025-06-25",
-    "ora": "11:00",
-    "indirizzo": "Via Murri 33",
-    "coord": { "lat": 44.4877, "lng": 11.3642 }
+    "coord": {
+      "lat": 44.5023,
+      "lng": 11.3521
+    }
   },
   {
     "id": 5,
@@ -47,7 +20,10 @@
     "data": "2025-06-25",
     "ora": "12:15",
     "indirizzo": "Via Marconi 8",
-    "coord": { "lat": 44.4940, "lng": 11.3421 }
+    "coord": {
+      "lat": 44.494,
+      "lng": 11.3421
+    }
   },
   {
     "id": 6,
@@ -57,7 +33,10 @@
     "data": "2025-06-25",
     "ora": "13:45",
     "indirizzo": "Tangenziale Nord",
-    "coord": { "lat": 44.5092, "lng": 11.3485 }
+    "coord": {
+      "lat": 44.5092,
+      "lng": 11.3485
+    }
   },
   {
     "id": 7,
@@ -67,7 +46,10 @@
     "data": "2025-06-25",
     "ora": "14:00",
     "indirizzo": "Via Emilia Levante 100",
-    "coord": { "lat": 44.5005, "lng": 11.3730 }
+    "coord": {
+      "lat": 44.5005,
+      "lng": 11.373
+    }
   },
   {
     "id": 8,
@@ -77,7 +59,10 @@
     "data": "2025-06-25",
     "ora": "15:20",
     "indirizzo": "Galleria Borgo Panigale",
-    "coord": { "lat": 44.4860, "lng": 11.2790 }
+    "coord": {
+      "lat": 44.486,
+      "lng": 11.279
+    }
   },
   {
     "id": 9,
@@ -87,7 +72,10 @@
     "data": "2025-06-25",
     "ora": "16:00",
     "indirizzo": "Via dell’Indipendenza 50",
-    "coord": { "lat": 44.4968, "lng": 11.3402 }
+    "coord": {
+      "lat": 44.4968,
+      "lng": 11.3402
+    }
   },
   {
     "id": 10,
@@ -97,7 +85,10 @@
     "data": "2025-06-25",
     "ora": "16:30",
     "indirizzo": "Piazza Maggiore",
-    "coord": { "lat": 44.4940, "lng": 11.3425 }
+    "coord": {
+      "lat": 44.494,
+      "lng": 11.3425
+    }
   },
   {
     "id": 11,
@@ -107,7 +98,10 @@
     "data": "2025-06-25",
     "ora": "17:15",
     "indirizzo": "Sottopasso Stazione Centrale",
-    "coord": { "lat": 44.5131, "lng": 11.3356 }
+    "coord": {
+      "lat": 44.5131,
+      "lng": 11.3356
+    }
   },
   {
     "id": 12,
@@ -117,7 +111,10 @@
     "data": "2025-06-25",
     "ora": "18:00",
     "indirizzo": "Viale Giovanni XXIII",
-    "coord": { "lat": 44.5020, "lng": 11.3525 }
+    "coord": {
+      "lat": 44.502,
+      "lng": 11.3525
+    }
   },
   {
     "id": 13,
@@ -127,7 +124,10 @@
     "data": "2025-06-25",
     "ora": "18:45",
     "indirizzo": "Via Saragozza 45",
-    "coord": { "lat": 44.4745, "lng": 11.3080 }
+    "coord": {
+      "lat": 44.4745,
+      "lng": 11.308
+    }
   },
   {
     "id": 14,
@@ -137,7 +137,10 @@
     "data": "2025-06-25",
     "ora": "19:30",
     "indirizzo": "Via Castiglione",
-    "coord": { "lat": 44.4950, "lng": 11.3410 }
+    "coord": {
+      "lat": 44.495,
+      "lng": 11.341
+    }
   },
   {
     "id": 15,
@@ -147,7 +150,10 @@
     "data": "2025-06-25",
     "ora": "20:00",
     "indirizzo": "Via delle Lame 12",
-    "coord": { "lat": 44.5140, "lng": 11.3280 }
+    "coord": {
+      "lat": 44.514,
+      "lng": 11.328
+    }
   },
   {
     "id": 16,
@@ -157,7 +163,10 @@
     "data": "2025-06-25",
     "ora": "20:30",
     "indirizzo": "Via Azzurra 27",
-    "coord": { "lat": 44.4980, "lng": 11.3490 }
+    "coord": {
+      "lat": 44.498,
+      "lng": 11.349
+    }
   },
   {
     "id": 17,
@@ -167,7 +176,10 @@
     "data": "2025-06-25",
     "ora": "21:15",
     "indirizzo": "Via D’Azeglio 10",
-    "coord": { "lat": 44.4935, "lng": 11.3420 }
+    "coord": {
+      "lat": 44.4935,
+      "lng": 11.342
+    }
   },
   {
     "id": 18,
@@ -177,7 +189,10 @@
     "data": "2025-06-25",
     "ora": "22:00",
     "indirizzo": "Tangenziale Sud",
-    "coord": { "lat": 44.4520, "lng": 11.3600 }
+    "coord": {
+      "lat": 44.452,
+      "lng": 11.36
+    }
   },
   {
     "id": 19,
@@ -187,7 +202,10 @@
     "data": "2025-06-25",
     "ora": "22:30",
     "indirizzo": "Via Saffi 5",
-    "coord": { "lat": 44.4910, "lng": 11.3380 }
+    "coord": {
+      "lat": 44.491,
+      "lng": 11.338
+    }
   },
   {
     "id": 20,
@@ -197,7 +215,10 @@
     "data": "2025-06-25",
     "ora": "23:00",
     "indirizzo": "Via Zanolini 3",
-    "coord": { "lat": 44.4870, "lng": 11.3400 }
+    "coord": {
+      "lat": 44.487,
+      "lng": 11.34
+    }
   },
   {
     "id": 21,
@@ -207,7 +228,10 @@
     "data": "2025-06-26",
     "ora": "00:10",
     "indirizzo": "Via dei Mille 22",
-    "coord": { "lat": 44.4970, "lng": 11.3415 }
+    "coord": {
+      "lat": 44.497,
+      "lng": 11.3415
+    }
   },
   {
     "id": 22,
@@ -217,7 +241,10 @@
     "data": "2025-06-26",
     "ora": "01:00",
     "indirizzo": "Via Marconi 30",
-    "coord": { "lat": 44.4920, "lng": 11.3430 }
+    "coord": {
+      "lat": 44.492,
+      "lng": 11.343
+    }
   },
   {
     "id": 23,
@@ -227,17 +254,10 @@
     "data": "2025-06-26",
     "ora": "02:30",
     "indirizzo": "Via Andrea Costa 40",
-    "coord": { "lat": 44.4930, "lng": 11.3440 }
-  },
-  {
-    "id": 24,
-    "type": "generico",
-    "gravita": "media",
-    "descrizione": "Segnalazione guasto semaforo",
-    "data": "2025-06-26",
-    "ora": "03:15",
-    "indirizzo": "Piazza VIII Agosto",
-    "coord": { "lat": 44.5000, "lng": 11.3450 }
+    "coord": {
+      "lat": 44.493,
+      "lng": 11.344
+    }
   },
   {
     "id": 25,
@@ -247,7 +267,10 @@
     "data": "2025-06-26",
     "ora": "04:00",
     "indirizzo": "Via San Vitale 60",
-    "coord": { "lat": 44.5050, "lng": 11.3560 }
+    "coord": {
+      "lat": 44.505,
+      "lng": 11.356
+    }
   },
   {
     "id": 26,
@@ -257,7 +280,10 @@
     "data": "2025-06-26",
     "ora": "05:00",
     "indirizzo": "Via Stalingrado 80",
-    "coord": { "lat": 44.5150, "lng": 11.3670 }
+    "coord": {
+      "lat": 44.515,
+      "lng": 11.367
+    }
   },
   {
     "id": 27,
@@ -267,7 +293,10 @@
     "data": "2025-06-26",
     "ora": "06:30",
     "indirizzo": "Via Selva 17",
-    "coord": { "lat": 44.4800, "lng": 11.3200 }
+    "coord": {
+      "lat": 44.48,
+      "lng": 11.32
+    }
   },
   {
     "id": 28,
@@ -277,26 +306,59 @@
     "data": "2025-06-26",
     "ora": "07:20",
     "indirizzo": "Via Marconi 12",
-    "coord": { "lat": 44.4900, "lng": 11.3420 }
+    "coord": {
+      "lat": 44.49,
+      "lng": 11.342
+    }
   },
   {
-    "id": 29,
-    "type": "incidente",
-    "gravita": "media",
-    "descrizione": "Scontro auto-scooter",
-    "data": "2025-06-26",
-    "ora": "08:45",
-    "indirizzo": "Via Irnerio 22",
-    "coord": { "lat": 44.4990, "lng": 11.3460 }
+    "id": 31,
+    "type": "alluvione",
+    "gravita": "alta",
+    "descrizione": "Allagamento zona urbana",
+    "data": "2025-06-25",
+    "ora": "10:30",
+    "indirizzo": "Viale Berti Pichat 30",
+    "coord": null
   },
   {
-    "id": 30,
-    "type": "traffico",
+    "id": 32,
+    "type": "alluvione",
     "gravita": "bassa",
-    "descrizione": "Flusso regolare di veicoli",
-    "data": "2025-06-26",
-    "ora": "09:30",
-    "indirizzo": "Viale Giovanni XXIII 5",
-    "coord": { "lat": 44.5030, "lng": 11.3520 }
+    "descrizione": "das",
+    "data": "2025-07-14",
+    "ora": "15:01",
+    "indirizzo": "Piazza Giuseppe Verdi 1, Bologna",
+    "coord": null
+  },
+  {
+    "id": 33,
+    "type": "alluvione",
+    "gravita": "alta",
+    "descrizione": "ACQUEDOTTO SOTTERRANEO ROTTO FUORIUSCITA ACQUA A PRESSIONE ELEVATA",
+    "data": "2025-07-14",
+    "ora": "15:08",
+    "indirizzo": "Via Volturno 2, Bologna",
+    "coord": null
+  },
+  {
+    "id": 34,
+    "type": "incidente",
+    "gravita": "alta",
+    "descrizione": "INCIDENTE MORTALE COINVOLTI DENTI E CHESANI",
+    "data": "2025-07-14",
+    "ora": "15:12",
+    "indirizzo": "Via Irnerio 5a, Bologna",
+    "coord": null
+  },
+  {
+    "id": 35,
+    "type": "alluvione",
+    "gravita": "bassa",
+    "descrizione": "ROTTURA ACQUEDOTTO SOTTERRANEO FUORI-USCITA ACQUA DALLA STRADA",
+    "data": "2025-07-14",
+    "ora": "15:13",
+    "indirizzo": "Via San Felice 10, Bologna",
+    "coord": null
   }
 ]
