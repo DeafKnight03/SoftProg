@@ -1,18 +1,5 @@
 [
   {
-    "id": 3,
-    "type": "alluvione",
-    "gravita": "alta",
-    "descrizione": "Allagamento zona urbana",
-    "data": "2025-06-25",
-    "ora": "10:30",
-    "indirizzo": "Viale Berti Pichat 20",
-    "coord": {
-      "lat": 44.501669,
-      "lng": 11.354559
-    }
-  },
-  {
     "id": 5,
     "type": "incidente",
     "gravita": "media",
@@ -374,6 +361,19 @@
     "coord": {
       "lat": 44.496112,
       "lng": 11.3359254
+    }
+  },
+  {
+    "id": 36,
+    "type": "incidente",
+    "gravita": "alta",
+    "descrizione": "INCIDENTE MORTALE COINVOLTI PATELLA E MATTOCCIA",
+    "data": "2025-07-14",
+    "ora": "15:33",
+    "indirizzo": "Via dei Mille 9/2, Bologna",
+    "coord": {
+      "lat": 44.5016807,
+      "lng": 11.3428179
     }
   }
 ]
